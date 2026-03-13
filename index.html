@@ -336,7 +336,7 @@ function render(){
   sug.addColorStop(.7,'rgba(100,0,200,.12)');sug.addColorStop(1,'rgba(0,0,0,0)');
   cx.fillStyle=sug;cx.beginPath();cx.arc(W/2,sunY,sunR,0,Math.PI*2);cx.fill();
   cx.fillStyle='#030008';
-  for(let i=1;i<7;i++){const ly=sunY+i*7;ctx.fillRect(W/2-sunR,ly,sunR*2,2.5);}
+  for(let i=1;i<7;i++){const ly=sunY+i*7;cx.fillRect(W/2-sunR,ly,sunR*2,2.5);}
 
   // Horizon glow
   const hg=cx.createRadialGradient(W/2,sunY+sunR,0,W/2,sunY+sunR,W*.45);
